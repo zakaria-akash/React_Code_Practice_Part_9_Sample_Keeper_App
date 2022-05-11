@@ -20,7 +20,7 @@ import Notes from "../notes.js";
 
 function Note() {
   return (
-    <div>
+    <div className="entireNote">
       {Notes.map((item) => (
         <EntryCard key={item.key} title={item.title} content={item.content} />
       ))}

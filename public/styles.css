@@ -13,16 +13,17 @@ body {
 
 header {
   text-align: center;
-  background-color: #f5ba13;
+  background-color: chartreuse;
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid darkslateblue;
 }
 
 header h1 {
-  color: #fff;
+  color: darkslateblue;
   font-family: "McLaren", cursive;
-  font-weight: 200;
+  font-weight: bolder;
 }
 
 footer {
@@ -37,7 +38,7 @@ footer p {
   color: #ccc;
 }
 .note {
-  background: #fff;
+  background-color: pink;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
@@ -45,13 +46,19 @@ footer p {
   margin: 16px;
   float: left;
 }
+.note:hover {
+  background-color: papayawhip;
+}
 .note h1 {
-  font-size: 1.1em;
+  font-size: 1em;
+  font-family: "McLaren", cursive;
+  font-weight: normal;
   margin-bottom: 6px;
 }
 .note p {
-  font-size: 1.1em;
+  font-size: 1em;
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
+  border-top: 1px solid black;
 }
