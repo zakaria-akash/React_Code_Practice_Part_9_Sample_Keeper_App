@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "Montserrat", sans-serif;
+  font-family: "McLaren", cursive;
 }
 body {
   background: #eee;
@@ -22,7 +22,6 @@ header {
 
 header h1 {
   color: darkslateblue;
-  font-family: "McLaren", cursive;
   font-weight: bolder;
 }
 
@@ -38,6 +37,7 @@ footer p {
   color: #ccc;
 }
 .note {
+  position: relative;
   background-color: pink;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
@@ -51,7 +51,6 @@ footer p {
 }
 .note h1 {
   font-size: 1em;
-  font-family: "McLaren", cursive;
   font-weight: normal;
   margin-bottom: 6px;
 }
@@ -64,24 +63,63 @@ footer p {
 }
 
 .note button {
-  position: relative;
-  float: right;
-  margin-right: 10px;
-  /* color: #f5ba13; */
+  position: absolute;
+  right: 5%;
+  bottom: 0%;
   color: black;
   border: none;
-  width: auto;
-  height: auto;
+  border-radius: 10%;
+  width: 30%;
+  height: 20%;
   cursor: pointer;
   outline: none;
   background: papayawhip;
   border: 1px solid black;
   font-size: 1em;
-  font-family: "McLaren", cursive;
   font-weight: normal;
 }
 .note button:hover {
   background: pink;
   color: red;
   border: 1px solid red;
+}
+
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: papayawhip;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form input,
+form textarea {
+  background: inherit;
+  font-family: inherit;
+  width: 100%;
+  padding: 4px;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  resize: none;
+}
+form textarea {
+  border-top: 1px solid black;
+}
+form button {
+  position: absolute;
+  right: 5%;
+  bottom: -5%;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 10%;
+  width: 20%;
+  height: 20%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  font-size: 1em;
+  font-weight: normal;
 }
