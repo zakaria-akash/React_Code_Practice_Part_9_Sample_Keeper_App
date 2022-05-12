@@ -2,10 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-html {
   font-family: "McLaren", cursive;
 }
+
 body {
   background: #eee;
   padding: 0 16px;
@@ -13,7 +12,7 @@ body {
 
 header {
   text-align: center;
-  background-color: chartreuse;
+  background-color: cornflowerblue;
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -25,16 +24,49 @@ header h1 {
   font-weight: bolder;
 }
 
-footer {
-  position: fixed;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: papayawhip;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
+form input,
+form textarea {
+  background: inherit;
+  font-family: inherit;
+  width: 100%;
+  padding: 4px;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  resize: none;
+}
+form textarea {
+  border-top: 1px solid black;
+}
+form button {
+  position: absolute;
+  right: 5%;
+  bottom: -5%;
+  /* background: #f5ba13; */
+  background: chartreuse;
 
-footer p {
-  color: #ccc;
+  color: darkslateblue;
+  border: none;
+  border-radius: 10%;
+  width: 20%;
+  height: 20%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  font-size: 1em;
+  font-weight: normal;
+}
+form button:hover {
+  font-weight: bolder;
 }
 .note {
   position: relative;
@@ -65,61 +97,31 @@ footer p {
 .note button {
   position: absolute;
   right: 5%;
-  bottom: 0%;
-  color: black;
-  border: none;
+  bottom: -10%;
+  color: red;
   border-radius: 10%;
   width: 30%;
   height: 20%;
   cursor: pointer;
   outline: none;
   background: papayawhip;
-  border: 1px solid black;
+  border: 1px solid red;
   font-size: 1em;
   font-weight: normal;
 }
 .note button:hover {
   background: pink;
-  color: red;
-  border: 1px solid red;
+  font-weight: bolder;
 }
 
-form {
-  position: relative;
-  width: 480px;
-  margin: 30px auto 20px auto;
-  background: papayawhip;
-  padding: 15px;
-  border-radius: 7px;
-  box-shadow: 0 1px 5px rgb(138, 137, 137);
-}
-form input,
-form textarea {
-  background: inherit;
-  font-family: inherit;
+footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
   width: 100%;
-  padding: 4px;
-  border: none;
-  outline: none;
-  font-size: 1.2em;
-  resize: none;
+  height: 2.5rem;
 }
-form textarea {
-  border-top: 1px solid black;
-}
-form button {
-  position: absolute;
-  right: 5%;
-  bottom: -5%;
-  background: #f5ba13;
-  color: #fff;
-  border: none;
-  border-radius: 10%;
-  width: 20%;
-  height: 20%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  outline: none;
-  font-size: 1em;
-  font-weight: normal;
+
+footer p {
+  color: #ccc;
 }
