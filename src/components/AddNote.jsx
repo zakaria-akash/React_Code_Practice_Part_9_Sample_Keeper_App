@@ -43,7 +43,7 @@ function AddNote() {
         <button>Add Note</button>
       </form>
       <div>
-        {newNote.map((item, index) => (
+        {newNote.map((item) => (
           <EntryCard key={item.key} title={item.title} content={item.content} />
         ))}
       </div>
